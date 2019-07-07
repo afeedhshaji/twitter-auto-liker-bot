@@ -29,7 +29,7 @@ class TwitterBot:
         time.sleep(3)
         for i in range(1, 3):
             bot.execute_script(
-                'window.scrollTo(0, document.body.scrollHeight)')
+                'window.scrollTo(0, document.body.scrollHeight)')  # js to scroll by a bit
             time.sleep(2)
             tweets = bot.find_elements_by_class_name('tweet')
             links = [elem.get_attribute('data-permalink-path')
