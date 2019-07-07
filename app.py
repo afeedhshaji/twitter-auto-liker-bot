@@ -27,7 +27,7 @@ class TwitterBot:
         bot = self.bot
         bot.get('https://twitter.com/search?q='+hashtag+'&src=typd')
         time.sleep(3)
-        for i in range(1, 3):
+        for i in range(1, 3):   #change the range to whatever you want
             bot.execute_script(
                 'window.scrollTo(0, document.body.scrollHeight)')  # js to scroll by a bit
             time.sleep(2)
